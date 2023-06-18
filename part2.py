@@ -42,7 +42,7 @@ cumulative_probabilities = [sum(probs[:i + 1]) for i in range(len(probs))]
 pt = rand_pt(tri_pts[0], tri_pts[1], tri_pts[2])
 fig, ax = plt.subplots()
 
-for _ in range(100000):
+for _ in range(1000):
     point = hundred(tri_pts, pt, cumulative_probabilities)
     ax.scatter(point[0], point[1])
     pt = point
@@ -56,7 +56,7 @@ cumulative_probabilities = [sum(probs[:i + 1]) for i in range(len(probs))]
 pt = rand_pt(tri_pts[0], tri_pts[1], tri_pts[2])
 fig, ax = plt.subplots()
 
-for _ in range(100000):
+for _ in range(1000):
     point = hundred(tri_pts, pt, cumulative_probabilities)
     ax.scatter(point[0], point[1])
     pt = point
